@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+<script>
+    let newSet
+    const start1 = function(){
+          newSet = setInterval(startNow, 2000)
+
+         function startNow(){
+            console.log("Shubham");
+         }
+        };
+    const stop1 = function(){
+        clearInterval(newSet);
+    }
+    document.querySelector("#start").addEventListener('click', start1);
+    document.querySelector("#stop").addEventListener('click', stop1);
+</script>
+
+</body>
+</html
